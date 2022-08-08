@@ -1,0 +1,53 @@
+.cookie {
+  $position: 30px;
+
+  position: fixed;
+  z-index: 97;
+  max-width: 400px;
+  background-color: rgba(255, 255, 255, .9);
+  border-radius: 4px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  bottom: $position;
+  right: $position;
+
+  @include media(sm) {
+    max-width: 420px;
+  }
+  @include media(xs) {
+    max-width: none;
+    left: 15px;
+    right: 15px;
+    bottom: 20px;
+  }
+
+  &__title {
+    margin: 0 0 5px 0;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  &__excerpt {
+    $color: #9C9FA8;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.5;
+    color: $color;
+    margin: 0 0 20px 0;
+
+    a {
+      color: $color;
+      text-decoration: underline;
+
+      &:hover{
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__footer {
+    text-align: right;
+  }
+}

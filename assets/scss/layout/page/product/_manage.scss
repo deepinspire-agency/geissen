@@ -1,0 +1,116 @@
+.product_manage {
+  margin: 0 0 150px 0;
+  overflow: hidden;
+  @include media(lg) {
+    margin: 0 0 120px 0;
+  }
+  @include media(sm) {
+    margin: 0 0 100px 0;
+  }
+  @include media(xs) {
+    margin: 0 0 80px 0;
+  }
+
+  &__row {
+    $left-width: 540px;
+    $left-width-lg: 345px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    &-left {
+      width: $left-width;
+      padding: 60px 30px 0 0;
+      @include media(lg) {
+        width: $left-width-lg;
+        padding-top: 0;
+      }
+      @include media(md) {
+        width: 100%;
+        padding: 0;
+        max-width: 570px;
+        margin: 0 auto 50px auto;
+      }
+    }
+
+    &-right {
+      width: calc(100% - #{$left-width});
+      @include media(lg) {
+        width: calc(100% - #{$left-width-lg});
+      }
+      @include media(md) {
+        width: 100%;
+      }
+    }
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0 0 20px 0;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.5;
+    margin: 0 0 40px 0;
+    @include media(xs) {
+      margin: 0 0 30px 0;
+    }
+    @include media(xs) {
+
+    }
+  }
+
+  &__excerpt {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 2;
+    @include media(lg) {
+      line-height: 1.5;
+    }
+    @include media(md) {
+      line-height: 2;
+    }
+  }
+
+  &__preview {
+    width: 1099px;
+    height: 600px;
+    overflow: hidden;
+    @include media(md) {
+      display: none;
+    }
+
+    img {
+      position: relative;
+      @include media(lg) {
+        left: -185px;
+      }
+      @include media(md) {
+        left: auto;
+      }
+    }
+
+    &-md {
+      display: none;
+      object-fit: cover;
+      width: 100%;
+      @include media(md) {
+        display: block;
+      }
+      @include media(xs) {
+        width: 150%;
+        max-width: 150%;
+        left: -25%;
+        position: relative;
+      }
+    }
+
+  }
+
+
+
+}

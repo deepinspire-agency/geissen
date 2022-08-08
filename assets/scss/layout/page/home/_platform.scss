@@ -1,0 +1,143 @@
+.home_platform {
+  background: linear-gradient(90deg, #5AABF1 0%, #A1F4FA 100%);
+  position: relative;
+  z-index: 3;
+  padding: 0 0 100px 0;
+  margin: 0 0 100px 0;
+  overflow: hidden;
+  @include media(lg) {
+    background: linear-gradient(90deg, #5AABF1 0%, #A1F4FA 100%);
+  }
+  @include media(sm) {
+    margin: 0 0 80px 0;
+  }
+  @include media(xs) {
+    padding: 0 0 80px 0;
+  }
+
+  .container {
+    position: relative;
+    z-index: 3;
+    margin-top: -170px;
+    @include media(xl) {
+      margin-top: -110px;
+    }
+    @include media(xs) {
+      margin-top: -70px;
+    }
+  }
+
+  &__preview {
+    position: relative;
+    z-index: 2;
+    @include media(lg) {
+      min-width: 1280px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    @include media(xs) {
+      min-width: 850px;
+    }
+
+    &-text {
+      max-width: 210px;
+      position: absolute;
+      z-index: 2;
+      left: 57%;
+      top: 48%;
+      font-weight: 700;
+      font-size: 18px;
+      @include media(lg) {
+        left: 59%;
+        top: 47%;
+      }
+      @include media(sm) {
+        left: 51%;
+        top: 46%;
+      }
+      @include media(xs) {
+        font-size: 14px;
+        max-width: 165px;
+        left: 48%;
+        top: 47%;
+      }
+
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: -125px;
+        width: 110px;
+        height: 94px;
+        background: url("../images/home/arrow.svg") center center no-repeat;
+        background-size: contain;
+      }
+
+      span {
+        position: absolute;
+        left: -15px;
+        top: 2px;
+        font-size: 12px;
+        @include media(lg) {
+
+        }
+      }
+    }
+
+    &-image {
+      object-fit: cover;
+      width: 100%;
+      position: relative;
+      z-index: 1;
+    }
+
+  }
+
+  &__body {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-size: 50px;
+    margin: 0 0 60px 0;
+    max-width: 400px;
+    @include media(xs) {
+      font-size: 36px;
+      margin: 0 0 40px 0;
+    }
+  }
+
+  &__list {
+    $icon-width: 68px;
+
+    font-weight: 400;
+    font-size: 24px;
+    @include media(xs) {
+      font-size: 18px;
+    }
+
+    > li {
+      display: flex;
+      align-items: flex-start;
+
+      &:not(:last-child) {
+        margin: 0 0 40px 0;
+      }
+    }
+
+    &-icon {
+      width: $icon-width;
+      display: flex;
+      align-items: center;
+      position: relative;
+      top: -4px;
+    }
+
+    &-text {
+      width: calc(100% - #{$icon-width});
+    }
+
+  }
+}

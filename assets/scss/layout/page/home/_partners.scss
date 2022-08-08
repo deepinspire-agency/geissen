@@ -1,0 +1,131 @@
+.home_partners {
+  background: #E3C5AE;
+  margin: 0 0 120px 0;
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+  @include media(md) {
+    margin: 0 0 100px 0;
+  }
+  @include media(xs) {
+    padding: 60px 0 10px 0;
+    margin: 0 0 80px 0;
+  }
+
+  .container {
+    position: relative;
+    z-index: 3;
+  }
+
+  &__preview {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    @include media(lg) {
+      max-width: 660px;
+      right: -150px;
+    }
+    @include media(md) {
+      max-width: 630px;
+      right: -140px;
+    }
+    @include media(sm) {
+      position: relative;
+      right: 0px;
+      top: unset;
+      transform: unset;
+      margin-top: -165px;
+      max-width: 650px;
+      margin-left: auto;
+    }
+    @include media(xs) {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin-top: 30px;
+      min-width: 125%;
+    }
+  }
+
+  &__title {
+    font-size: 50px;
+    margin: 0 0 20px 0;
+    @include media(xs) {
+      text-align: center;
+      font-size: 36px;
+    }
+  }
+
+  &__excerpt {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 2;
+    margin: 0 0 48px 0;
+    @include media(md) {
+      margin: 0 0 40px 0;
+    }
+    @include media(xs) {
+      text-align: center;
+      font-size: 18px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 860px;
+    @include media(sm) {
+      max-width: 460px;
+    }
+    @include media(xs) {
+      max-width: none;
+    }
+
+    > li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+      @include media(sm) {
+        margin-bottom: 50px;
+      }
+      @include media(xs) {
+        width: 100%;
+        margin-bottom: 40px;
+      }
+
+      &:last-child {
+        @include media(xs) {
+          margin-bottom: 0px;
+        }
+      }
+
+      &:not(:last-child) {
+        margin-right: 60px;
+        @include media(xs) {
+          margin-right: 0;
+        }
+      }
+
+      &:nth-child(3) {
+        margin-right: 0;
+      }
+
+      img {
+
+        &.lviv {
+          height: 70px;
+        }
+
+        &.tempo {
+          height: 125px;
+        }
+
+        &.arts {
+          height: 40px;
+        }
+      }
+    }
+  }
+}

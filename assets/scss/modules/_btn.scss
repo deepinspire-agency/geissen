@@ -1,0 +1,63 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: inherit;
+    font-weight: 700;
+    text-align: center;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-color: $color-purple;
+    border: 1px solid $color-purple;
+    color: #fff;
+    white-space: nowrap;
+    padding: 0px 36px;
+    height: 48px;
+    font-size: 16px;
+    line-height: 1.42857143;
+    border-radius: 999px;
+    user-select: none;
+    position: relative;
+    text-decoration: none;
+    transition: all .12s linear;
+    text-transform: none;
+    font-family: $font-body;
+    @include media(xl) {
+
+    }
+
+    &:hover {
+        text-decoration: none;
+        box-shadow: 0px 0px 30px 0px rgba(229, 41, 75, 0.6);
+    }
+
+    &-icon {
+        svg,
+        img {
+            margin: 0 15px 0 0;
+            max-height: 24px;
+        }
+    }
+
+    &-opacity {
+        background: none;
+        border: 1px solid $color-gray;
+        color: $color-gray;
+
+        &:hover {
+            background-color: $color-purple;
+            border: 1px solid $color-purple;
+            color: #fff;
+        }
+    }
+
+    &-sm {
+        height: 38px;
+        padding: 0 24px;
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+}

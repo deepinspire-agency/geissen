@@ -1,0 +1,48 @@
+.talk {
+  margin: 0 0 140px 0;
+  @include media(md) {
+    margin: 0 0 120px 0;
+  }
+  @include media(xs) {
+    margin: 0 0 100px 0;
+  }
+
+  &__container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 50px;
+    margin: 0 0 20px 0;
+    @include media(xs) {
+      font-size: 36px;
+    }
+  }
+
+  &__excerpt {
+    max-width: 270px;
+    margin: 0 auto 20px auto;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 2;
+    @include media(xs) {
+      font-size: 18px;
+    }
+  }
+
+  &__link {
+    font-weight: 700;
+    font-size: 36px;
+    font-family: $font-montserrat;
+    color: $color-purple;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+
+}

@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+body {
+    text-rendering: optimizeLegibility;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: $font-body;
+    font-weight: 400;
+    color: $color-gray;
+    font-size: 18px;
+    line-height: 1.5;
+    background-color: #fff;
+    -webkit-text-size-adjust: none;
+    min-height: 100%;
+    position: relative;
+    letter-spacing: 0.02em;
+
+    @include media(xl) {
+
+    }
+}
+html {
+    position: relative;
+    min-height: 100%;
+    height: 100%;
+}
+header,
+footer,
+article,
+section,
+nav,
+main {
+
+}
+
+.hidden {
+    display: none;
+
+    &-md {
+        @include media(md) {
+            display: none !important;
+        }
+    }
+
+}
+
+a {
+    color: $color-blue;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    $gutter: 80px;
+    $gutter-xl: 15px;
+
+    max-width: calc(1110px + #{$gutter * 2});
+    width: 100%;
+    padding-left: $gutter;
+    padding-right: $gutter;
+    @include media(lg) {
+        max-width: 930px;
+        padding-left: $gutter-xl;
+        padding-right: $gutter-xl;
+    }
+    @include media(md) {
+        max-width: 690px;
+    }
+}
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.text-uppercase {
+    text-transform: uppercase !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    line-height: 1.5;
+    margin: 0 0 25px 0;
+    color: $color-gray;
+    font-family: $font-montserrat;
+}
+h1 {
+    font-size: 36px;
+    @include media(xl) {
+
+    }
+    @include media(xs) {
+        font-size: 24px;
+    }
+}
+h2 {
+    font-size: 34px;
+    @include media(xl) {
+
+    }
+    @include media(md) {
+
+    }
+}
+h3 {
+    font-size: 32px;
+    @include media(xl) {
+
+    }
+}
+h5 {
+    font-size: 24px;
+    @include media(xl) {
+
+    }
+    @include media(lg) {
+
+    }
+}
+h6 {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0 0 20px 0;
+}
+
+section {
+
+}
+
+.visible {
+    &-mobile {
+        @include media_min(sm) {
+            display: none;
+        }
+    }
+
+    &-md {
+      @include media(md) {
+          display: block !important;
+      }
+    }
+}
+
+sup {
+    font-size: 14px;
+}

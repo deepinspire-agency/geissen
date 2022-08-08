@@ -1,0 +1,135 @@
+.product_check {
+  margin: 0 0 100px 0;
+  overflow: hidden;
+  @include media(lg) {
+    margin: 0 0 90px 0;
+  }
+  @include media(md) {
+    margin: 0 0 70px 0;
+  }
+  @include media(xs) {
+    margin: 0 0 50px 0;
+  }
+
+  &__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.5;
+    margin: 0 0 60px 0;
+    @include media(sm) {
+      text-align: left;
+      max-width: 375px;
+    }
+    @include media(xs) {
+      font-size: 36px;
+      margin: 0 0 40px 0;
+    }
+
+  }
+
+  &__video {
+    position: relative;
+    margin: 0 0 20px 0;
+
+    &-ipad {
+      width: 1421px;
+      transform: translateX(-410px);
+      position: relative;
+      z-index: 1;
+      @include media(lg) {
+        width: 1348px;
+        height: 615px;
+        transform: translateX(-460px);
+      }
+      @include media(md) {
+        width: 1070px;
+        height: 488px;
+        transform: translateX(-390px);
+      }
+      @include media(sm) {
+        width: 652px;
+        height: 296px;
+        transform: translateX(-220px);
+      }
+      @include media(xs) {
+        display: none;
+      }
+    }
+
+    &-preview {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      z-index: 2;
+      left: 175px;
+      top: 41px;
+      bottom: 49px;
+      width: 760px;
+      @include media(lg) {
+        width: 720px;
+        left: 96px;
+        bottom: 46px;
+        top: 38px;
+      }
+      @include media(md) {
+        width: 571px;
+        left: 51px;
+        top: 30px;
+        bottom: 38px;
+      }
+      @include media(sm) {
+        width: 348px;
+        left: 48px;
+        top: 19px;
+        bottom: 26px;
+      }
+      @include media(xs) {
+        position: relative;
+        left: auto;
+        right: auto;
+        bottom: auto;
+        top: auto;
+        width: 100%;
+      }
+
+      svg {
+        position: relative;
+        z-index: 5;
+        transform: translateX(10px) translateY(-1px);
+      }
+
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  &__text {
+    max-width: 730px;
+    margin: 0 auto;
+    line-height: 2;
+    font-weight: 400;
+
+    small {
+      display: block;
+      margin: 0 0 40px 0;
+      font-size: 16px;
+      color: #575756;
+    }
+
+    p {
+      margin: 0;
+      padding: 0 0 30px 0;
+      font-weight: 400;
+      font-size: 24px;
+      @include media(xs) {
+        font-size: 18px;
+      }
+    }
+  }
+
+}

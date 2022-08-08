@@ -1,0 +1,57 @@
+.about_gallery {
+  margin: 0 auto 200px auto;
+  max-width: 1400px;
+  overflow: hidden;
+  @include media(lg) {
+    margin: 0 auto 160px auto;
+  }
+  @include media(md) {
+    margin: 0 auto 140px auto;
+  }
+  @include media(sm) {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: none;
+    margin: 0 0 120px 0;
+  }
+  @include media(xs) {
+    margin: 0 0 100px 0;
+  }
+
+  &__list {
+    $gutter: 15px;
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -#{$gutter};
+    margin-right: -#{$gutter};
+    @include media(sm) {
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+    > li {
+      display: flex;
+      width: 33.32%;
+      align-items: center;
+      justify-content: center;
+      padding: 0 $gutter;
+      @include media(sm) {
+        width: 100%;
+        margin: 0;
+      }
+
+      &:not(:last-child) {
+        @include media(sm) {
+          margin-bottom: 30px;
+        }
+      }
+
+      img {
+        object-fit: cover;
+        width: 100%;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,126 @@
+.home_support {
+  margin: 0 0 100px 0;
+  @include media(sm) {
+    margin: 0 0 80px 0;
+  }
+
+  &__container {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-size: 50px;
+    margin: 0 0 60px 0;
+    @include media(md) {
+      max-width: 450px;
+    }
+    @include media(sm) {
+      text-align: center;
+    }
+    @include media(xs) {
+      margin: 0 0 40px 0;
+      font-size: 36px;
+    }
+  }
+
+  &__card {
+    $image-width: 320px;
+
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 50px 0;
+    @include media(sm) {
+      max-width: $image-width;
+      margin: 0 auto 50px auto;
+    }
+    @include media(xs) {
+      margin: 0 auto 15px auto;
+      max-width: 100%;
+    }
+
+    &-image {
+      width: $image-width;
+      @include media(sm) {
+        width: 100%;
+        margin: 0 0 40px 0;
+      }
+      @include media(xs) {
+        margin: 0 -15px 30px -15px;
+        width: calc(100% + 30px);
+      }
+
+      img {
+        @include media(xs) {
+          object-fit: cover;
+          width: 100%;
+        }
+      }
+    }
+
+    &-text {
+      width: calc(100% - #{$image-width});
+      padding: 0 0 0 60px;
+      @include media(md) {
+        padding: 0 0 0 40px;
+      }
+      @include media(sm) {
+        width: 100%;
+        padding: 0;
+      }
+    }
+
+    &-title {
+      font-size: 36px;
+      margin: 0 0 20px 0;
+    }
+
+    &-excerpt {
+      font-weight: 400;
+      font-size: 14px;
+      margin: 0 0 20px 0;
+      line-height: 2;
+    }
+
+    &-footer {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: $color-gray;
+
+      &:hover, &:hover span {
+        text-decoration: none;
+      }
+
+      img {
+        margin: 0 12px 0 0;
+        max-width: 36px;
+      }
+
+      span {
+        font-weight: 500;
+        font-size: 14px;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__footer {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 200%;
+    @include media(sm) {
+      font-size: 18px;
+    }
+
+    p {
+      padding: 0;
+      margin: 0;
+
+      &:first-child {
+        margin: 0 0 30px 0;
+      }
+    }
+  }
+}

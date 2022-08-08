@@ -1,0 +1,47 @@
+.team {
+
+  &__list {
+    $gutter: 37px;
+    $gutter-lg: 30px;
+    $gutter-md: 35px;
+
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-left: -#{$gutter};
+    margin-right: -#{$gutter};
+    @include media(lg) {
+      margin-left: -#{$gutter-lg};
+      margin-right: -#{$gutter-lg};
+    }
+    @include media(md) {
+      margin-left: -#{$gutter-md};
+      margin-right: -#{$gutter-md};
+    }
+    @include media(sm) {
+      margin-left: 0;
+      margin-right: 0;
+      max-width: 250px;
+      margin: 0 auto;
+    }
+
+    > li {
+      display: flex;
+      width: 33.32%;
+      padding: 0 $gutter;
+      margin-bottom: 80px;
+      @include media(lg) {
+        padding: 0 $gutter-lg;
+      }
+      @include media(md) {
+        width: 50%;
+        padding: 0 $gutter-md;
+        margin-bottom: 60px;
+      }
+      @include media(sm) {
+        width: 100%;
+        padding: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,190 @@
+.soon {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+
+  &__row {
+    background: url("../images/soon/hero.png") right center no-repeat;
+    background-size: 775px;
+    padding: 70px 0;
+    @include media(xl) {
+      padding: 60px 0;
+      background-size: 600px;
+    }
+    @include media(lg) {
+      padding: 40px 0;
+      background-size: 520px;
+    }
+    @include media(md) {
+      background-size: 400px;
+      background-position: 100% 100px;
+    }
+    @include media(sm) {
+      background-image: none;
+    }
+
+  }
+
+  &__logo {
+    max-width: 357px;
+    margin: 0 0 50px 0;
+    @media screen and (max-height: 880px) {
+      margin: 0 0 30px 0;
+    }
+    @include media(xl) {
+      margin: 0 0 40px 0;
+    }
+    @include media(md) {
+      max-width: 270px;
+      margin: 0 0 30px 0;
+    }
+    @include media(sm) {
+      margin: 0 auto 30px auto;
+    }
+    @include media(xs) {
+      margin: 0 auto 20px auto;
+    }
+  }
+
+  &__subtitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    color: $color-pink;
+    font-family: $font-lexend;
+    margin: 0 0 50px 0;
+    @media screen and (max-height: 880px) {
+      margin: 0 0 30px 0;
+    }
+    @include media(xl) {
+      margin: 0 0 40px 0;
+    }
+    @include media(md) {
+      margin: 0 0 30px 0;
+    }
+    @include media(sm) {
+      text-align: center;
+    }
+    @include media(xs) {
+      max-width: 230px;
+      margin: 0 auto 30px auto;
+    }
+  }
+
+  &__title {
+    margin: 0 0 20px 0;
+    @include media(xl) {
+      max-width: 365px;
+    }
+    @include media(lg) {
+      max-width: 320px;
+    }
+    @include media(sm) {
+      text-align: center;
+      margin: 0 auto 20px auto;
+    }
+  }
+
+  &__excerpt {
+    max-width: 455px;
+    margin: 0 0 40px 0;
+    @include media(lg) {
+      max-width: 370px;
+    }
+    @include media(sm) {
+      margin: 0 auto 40px auto;
+      text-align: center;
+      max-width: 420px;
+    }
+  }
+
+  &__hero {
+    display: none;
+    overflow: hidden;
+    @include media(sm) {
+      display: block;
+    }
+
+    img {
+
+    }
+
+  }
+
+  &__download {
+    margin: 0 0 50px 0;
+    @include media(sm) {
+      display: flex;
+      align-items: flex-end;
+    }
+    @include media(xs) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &-preview {
+      max-width: 100px;
+      margin-bottom: 30px;
+      @include media(sm) {
+        margin: 0 30px 0 0;
+      }
+      @include media(xs) {
+        margin: 0 0 30px 0;
+      }
+    }
+
+  }
+
+  &__contacts {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    @media screen and (max-height: 880px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    @include media(xl) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    @include media(md) {
+      display: block;
+    }
+    @include media(sm) {
+      font-size: 18px;
+    }
+
+    > li {
+
+      &:not(:last-child) {
+        margin: 0 0 30px 0;
+        @media screen and (max-height: 880px) {
+          margin: 0 50px 0 0;
+        }
+        @include media(xl) {
+          margin: 0 50px 0 0;
+        }
+        @include media(md) {
+          margin: 0 0 25px 0;
+        }
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        text-decoration: none;
+        color: $color-gray;
+
+        img {
+          margin: 0 20px 0 0;
+        }
+      }
+
+    }
+
+  }
+
+}

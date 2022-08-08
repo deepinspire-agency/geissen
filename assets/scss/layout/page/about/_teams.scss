@@ -1,0 +1,32 @@
+.about_teams {
+  margin: 0 0 70px 0;
+  @include media(lg) {
+    margin: 0 0 40px 0;
+  }
+  @include media(md) {
+    max-width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @include media(xs) {
+    margin: 0 0 20px 0;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 1.5;
+    font-family: $font-montserrat;
+    margin: 0 0 60px 0;
+    @include media(md) {
+      text-align: center;
+    }
+    @include media(xs) {
+      font-size: 36px;
+      max-width: 180px;
+      margin: 0 auto 40px auto;
+    }
+  }
+
+
+}
