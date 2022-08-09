@@ -173,7 +173,7 @@
 
                                     <!-- card > footer -->
                                     <div class="team__card-footer">
-                                        Co-founder and CEO
+                                        CEO and Co-founder
                                     </div>
                                     <!-- end card > footer -->
 
@@ -407,7 +407,7 @@
 
                                     <!-- card > footer -->
                                     <div class="team__card-footer">
-                                        Senior Embedded Developer
+                                        Senior Embedded Developer and Co-founder
                                     </div>
                                     <!-- end card > footer -->
 
