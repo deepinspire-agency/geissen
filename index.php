@@ -7,7 +7,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <title>Geissen</title>
+    <title>Turning music instruments into game controllers | Geissen</title>
+    <meta name="description" content="The Geissen device reads a musical instrument in real-time, giving an accurate and instant interpretation of the music being played." />
 
     <?php require 'template/partials/head.php'; ?>
 

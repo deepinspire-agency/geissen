@@ -1,5 +1,5 @@
 <?php
-$domain = 'https://test.geissen.co.uk';
+$domain = 'https://geissen.co.uk';
 ?>
 
 <meta property="og:image" content="<?= $domain ?>/assets/images/og_image.png" />
@@ -7,8 +7,8 @@ $domain = 'https://test.geissen.co.uk';
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="627" />
 
-<meta property="og:title" content="Custom Software Development Company | Geissen"/>
-<meta property="og:description" content=""/>
+<meta property="og:title" content="Turning music instruments into game controllers | Geissen"/>
+<meta property="og:description" content="The Geissen device reads a musical instrument in real-time, giving an accurate and instant interpretation of the music being played."/>
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="en_US" />
 <meta property="og:url" content="<?= $domain ?>" />
